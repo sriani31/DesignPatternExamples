@@ -1,4 +1,4 @@
-public class Duck {
+public abstract class Duck {
 
 //    public void quack(){
 //        System.out.println("quack quack!!!");
@@ -22,6 +22,7 @@ public class Duck {
 
     public void performFly()
     {
+        flyBehavior.fly();
 
     }
 //    public void fly()

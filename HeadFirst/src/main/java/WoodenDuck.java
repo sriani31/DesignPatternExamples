@@ -1,11 +1,10 @@
-public class RedHeadDuck extends Duck {
-
-    FlyBehavior flyBehavior = new FlyWithWings();
-    QuackBehavior quackBehavior = new Quack();
+public class WoodenDuck extends Duck{
+    FlyBehavior flyBehavior = new FlyNoWay();
+    QuackBehavior quackBehavior = new MuteQuack();
 
     @Override
     public void display() {
-        System.out.println("This is RedHeadDuck");
+        System.out.println("This is a wooden duck");
     }
 
     @Override
@@ -16,5 +15,6 @@ public class RedHeadDuck extends Duck {
     @Override
     public void performFly() {
         flyBehavior.fly();
+
     }
 }
